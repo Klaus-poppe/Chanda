@@ -35,8 +35,7 @@ public class Dao {
                 + offset + ", " + noOfRecords;
 		 try{
 
-		    	ctx=new InitialContext();
-				ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+		    	
 				con=DBConnection.getConnection();
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
@@ -82,8 +81,7 @@ public class Dao {
                 + offset + ", " + noOfRecords;
 		 try{
 
-		    	ctx=new InitialContext();
-				ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+		    	
 				con=DBConnection.getConnection();
 				PreparedStatement ps = con.prepareStatement(sql);
 				ps.setString(1, category);
@@ -130,8 +128,7 @@ public class Dao {
                 + noOfRecords;
 		 try{
 
-		    	ctx=new InitialContext();
-				ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+		    	
 				con=DBConnection.getConnection();
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
@@ -190,8 +187,7 @@ public class Dao {
 	public boolean insertUser(User s) {
 		boolean result = true ;
 		try {
-			ctx=new InitialContext();
-			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+			
 			con=DBConnection.getConnection();
 			sql = "INSERT INTO `users` (`name`,`password`, `email`,`phone`,`address` ) VALUES (?,?,?,?,?)";
 			ps = con.prepareStatement(sql);
@@ -206,10 +202,6 @@ public class Dao {
 			// TODO Auto-generated catch block
 			result = false;
 			e.printStackTrace();
-		}catch (NamingException e) {
-			// TODO Auto-generated catch block
-			result = false;
-			e.printStackTrace();
 		}
 		return result;
 	}
@@ -219,8 +211,7 @@ public class Dao {
 		int id = -1;
 		try {
 			
-			ctx=new InitialContext();
-			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+			
 			con=DBConnection.getConnection();
 			sql="Select `uid`,`name` from users where name=? or email=?";
 			ps = con.prepareStatement(sql);
@@ -233,10 +224,7 @@ public class Dao {
 			}
 
 			con.close();
-		} catch (NamingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SQLException e) {
+		}  catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -249,8 +237,7 @@ public class Dao {
 	public boolean insertFeedback(String name,String  phone ,String email , String message) {
 		boolean result = true ;
 		try {
-			ctx=new InitialContext();
-			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+			
 			con=DBConnection.getConnection();
 			sql = "INSERT INTO `feedback`(`name`, `phone`, `email`, `message`) VALUES (?,?,?,?)";
 			ps = con.prepareStatement(sql);
@@ -264,10 +251,6 @@ public class Dao {
 			// TODO Auto-generated catch block
 			result = false;
 			e.printStackTrace();
-		}catch (NamingException e) {
-			// TODO Auto-generated catch block
-			result = false;
-			e.printStackTrace();
 		}
 		return result;
 	}
@@ -275,8 +258,7 @@ public class Dao {
 	public boolean insertCart(int uid , int pid) {
 		boolean result = true ;
 		try {
-			ctx=new InitialContext();
-			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+			
 			con=DBConnection.getConnection();
 			sql = "INSERT INTO `cart`(`uid`, `pid`) VALUES (?,?)";
 			ps = con.prepareStatement(sql);
@@ -288,10 +270,6 @@ public class Dao {
 			// TODO Auto-generated catch block
 			result = false;
 			e.printStackTrace();
-		}catch (NamingException e) {
-			// TODO Auto-generated catch block
-			result = false;
-			e.printStackTrace();
 		}
 		return result;
 	}
@@ -299,8 +277,7 @@ public class Dao {
 	public boolean insertOrder(User u , int pid , int qty , String amount) {
 		boolean result = true ;
 		try {
-			ctx=new InitialContext();
-			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+			
 			con=DBConnection.getConnection();
 			sql = "INSERT INTO `orders`(`name`, `email`, `phone`, `address`, `pid` , `quantity` ,`amount`) VALUES (?,?,?,?,?,?,?)";
 			ps = con.prepareStatement(sql);
@@ -317,10 +294,6 @@ public class Dao {
 			// TODO Auto-generated catch block
 			result = false;
 			e.printStackTrace();
-		}catch (NamingException e) {
-			// TODO Auto-generated catch block
-			result = false;
-			e.printStackTrace();
 		}
 		return result;
 	}
@@ -329,8 +302,7 @@ public class Dao {
 		User s = new User();
 		try {
 			
-			ctx=new InitialContext();
-			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+			
 			con=DBConnection.getConnection();
 			sql="SELECT `uid`, `name`, `email`, `phone`, `address` FROM `users` WHERE  name = ?";
 			ps = con.prepareStatement(sql);
@@ -346,10 +318,7 @@ public class Dao {
 			}
 
 			con.close();
-		} catch (NamingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SQLException e) {
+		}  catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -367,8 +336,7 @@ public class Dao {
 			Connection con;
 			PreparedStatement ps;
 			ResultSet rs;
-			ctx=new InitialContext();
-			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+			
 			con=DBConnection.getConnection();
 			sql="SELECT `pid`, `name`, `description`, `price`, `image` FROM `products` WHERE pid = ?";
 			ps = con.prepareStatement(sql);
@@ -384,10 +352,7 @@ public class Dao {
 			}
 			rs.close();
 			con.close();
-		} catch (NamingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SQLException e) {
+		}  catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -401,8 +366,7 @@ public class Dao {
 		ArrayList<Image> gallery = new ArrayList<Image>();
 		try {
 			
-			ctx=new InitialContext();
-			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+			
 			con=DBConnection.getConnection();
 			sql="SELECT `pid` FROM `cart` WHERE uid = ?";
 			ps = con.prepareStatement(sql);
@@ -415,9 +379,6 @@ public class Dao {
 			}
 			rs.close();
 			con.close();
-		} catch (NamingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -430,8 +391,7 @@ public class Dao {
 	public Boolean deleteCartItem(int uid, int pid) {
 		boolean result=true;
 		try {
-			ctx=new InitialContext();
-			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
+			
 			con=DBConnection.getConnection();
 			sql = "DELETE FROM `cart` WHERE (uid=? and pid=?)";
 			ps = con.prepareStatement(sql);
@@ -440,10 +400,6 @@ public class Dao {
 			ps.executeUpdate();
 			con.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			result = false;
-			e.printStackTrace();
-		}catch (NamingException e) {
 			// TODO Auto-generated catch block
 			result = false;
 			e.printStackTrace();
