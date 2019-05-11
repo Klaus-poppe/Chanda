@@ -37,7 +37,7 @@ public class Dao {
 
 		    	ctx=new InitialContext();
 				ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-				con=ds.getConnection();
+				con=DBConnection.getConnection();
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 
@@ -84,7 +84,7 @@ public class Dao {
 
 		    	ctx=new InitialContext();
 				ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-				con=ds.getConnection();
+				con=DBConnection.getConnection();
 				PreparedStatement ps = con.prepareStatement(sql);
 				ps.setString(1, category);
 				ResultSet rs = ps.executeQuery();
@@ -132,7 +132,7 @@ public class Dao {
 
 		    	ctx=new InitialContext();
 				ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-				con=ds.getConnection();
+				con=DBConnection.getConnection();
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 
@@ -170,7 +170,7 @@ public class Dao {
 
     	ctx=new InitialContext();
 		ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-		con=ds.getConnection();
+		con=DBConnection.getConnection();
         sql = "select * from users where (name=? or email=?)and password=?";
         ps = con.prepareStatement (sql);
         ps.setString(1, name);
@@ -192,7 +192,7 @@ public class Dao {
 		try {
 			ctx=new InitialContext();
 			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-			con=ds.getConnection();
+			con=DBConnection.getConnection();
 			sql = "INSERT INTO `users` (`name`,`password`, `email`,`phone`,`address` ) VALUES (?,?,?,?,?)";
 			ps = con.prepareStatement(sql);
 			ps.setString(1, s.getName());
@@ -221,7 +221,7 @@ public class Dao {
 			
 			ctx=new InitialContext();
 			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-			con=ds.getConnection();
+			con=DBConnection.getConnection();
 			sql="Select `uid`,`name` from users where name=? or email=?";
 			ps = con.prepareStatement(sql);
 			ps.setString(1 , name);
@@ -251,7 +251,7 @@ public class Dao {
 		try {
 			ctx=new InitialContext();
 			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-			con=ds.getConnection();
+			con=DBConnection.getConnection();
 			sql = "INSERT INTO `feedback`(`name`, `phone`, `email`, `message`) VALUES (?,?,?,?)";
 			ps = con.prepareStatement(sql);
 			ps.setString(1, name);
@@ -277,7 +277,7 @@ public class Dao {
 		try {
 			ctx=new InitialContext();
 			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-			con=ds.getConnection();
+			con=DBConnection.getConnection();
 			sql = "INSERT INTO `cart`(`uid`, `pid`) VALUES (?,?)";
 			ps = con.prepareStatement(sql);
 			ps.setInt(1, uid );
@@ -301,7 +301,7 @@ public class Dao {
 		try {
 			ctx=new InitialContext();
 			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-			con=ds.getConnection();
+			con=DBConnection.getConnection();
 			sql = "INSERT INTO `orders`(`name`, `email`, `phone`, `address`, `pid` , `quantity` ,`amount`) VALUES (?,?,?,?,?,?,?)";
 			ps = con.prepareStatement(sql);
 			ps.setString(1, u.getName() );
@@ -331,7 +331,7 @@ public class Dao {
 			
 			ctx=new InitialContext();
 			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-			con=ds.getConnection();
+			con=DBConnection.getConnection();
 			sql="SELECT `uid`, `name`, `email`, `phone`, `address` FROM `users` WHERE  name = ?";
 			ps = con.prepareStatement(sql);
 			ps.setString(1 , name);
@@ -369,7 +369,7 @@ public class Dao {
 			ResultSet rs;
 			ctx=new InitialContext();
 			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-			con=ds.getConnection();
+			con=DBConnection.getConnection();
 			sql="SELECT `pid`, `name`, `description`, `price`, `image` FROM `products` WHERE pid = ?";
 			ps = con.prepareStatement(sql);
 			ps.setInt(1 , pid);
@@ -403,7 +403,7 @@ public class Dao {
 			
 			ctx=new InitialContext();
 			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-			con=ds.getConnection();
+			con=DBConnection.getConnection();
 			sql="SELECT `pid` FROM `cart` WHERE uid = ?";
 			ps = con.prepareStatement(sql);
 			ps.setInt(1 , uid);
@@ -432,7 +432,7 @@ public class Dao {
 		try {
 			ctx=new InitialContext();
 			ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
-			con=ds.getConnection();
+			con=DBConnection.getConnection();
 			sql = "DELETE FROM `cart` WHERE (uid=? and pid=?)";
 			ps = con.prepareStatement(sql);
 			ps.setInt(1, uid );
