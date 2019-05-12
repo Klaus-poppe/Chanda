@@ -35,8 +35,7 @@ public class Dao {
                 + offset + ", " + noOfRecords;
 		 try{
 
-		    	
-				con=DBConnection.getConnection();
+			con=DBConnection.getConnection();
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 
@@ -164,9 +163,6 @@ public class Dao {
     {
      boolean st =false;
      try{
-
-    	ctx=new InitialContext();
-		ds=(DataSource)ctx.lookup("java:comp/env/jdbc/conPool");
 		con=DBConnection.getConnection();
         sql = "select * from users where (name=? or email=?)and password=?";
         ps = con.prepareStatement (sql);
@@ -331,8 +327,6 @@ public class Dao {
 		Image s = new Image();
 		try {
 			String sql;
-			Context ctx;
-			DataSource ds;
 			Connection con;
 			PreparedStatement ps;
 			ResultSet rs;
