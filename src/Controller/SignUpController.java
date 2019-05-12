@@ -84,10 +84,10 @@ public class SignUpController extends HttpServlet {
 				s.setId(uid);
 				
 				if(flag) 
-				response.sendRedirect("signin.jsp");
+				response.sendRedirect("/WEB-INF/signin.jsp");
 				else {
 				request.setAttribute("error" , error);
-				RequestDispatcher rd = request.getRequestDispatcher("signup.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/signup.jsp");
 				rd.forward(request, response);
 				}
 				

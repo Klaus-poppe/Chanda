@@ -57,7 +57,7 @@ public class Display extends HttpServlet {
 			request.setAttribute("gallery", list);
 			request.setAttribute("noOfPages", noOfPages);
 	        request.setAttribute("currentPage", page);
-			RequestDispatcher rd = request.getRequestDispatcher("shop.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/shop.jsp");
 			rd.forward(request, response);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -76,7 +76,7 @@ public class Display extends HttpServlet {
 				request.setAttribute("gallery", list);
 				request.setAttribute("noOfPages", noOfPages);
 		        request.setAttribute("currentPage", page);
-				RequestDispatcher rd = request.getRequestDispatcher("shop.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/shop.jsp");
 				rd.forward(request, response);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

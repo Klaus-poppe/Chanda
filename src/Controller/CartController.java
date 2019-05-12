@@ -44,7 +44,7 @@ public class CartController extends HttpServlet {
 		request.setAttribute("s", s);
 		 ArrayList<Image> list = db.getCart(uid);
 		 request.setAttribute("gallery", list);
-			RequestDispatcher rd = request.getRequestDispatcher("cart.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/cart.jsp");
 			rd.forward(request, response);
 		 
 	}

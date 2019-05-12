@@ -68,7 +68,7 @@ public class SignInController extends HttpServlet {
 	        {
 	        	error = "Failed";
 	        	request.setAttribute("msg", error);
-	  		  RequestDispatcher rs = request.getRequestDispatcher("signin.jsp");
+	  		  RequestDispatcher rs = request.getRequestDispatcher("/WEB-INF/signin.jsp");
 	          rs.forward(request, response);
 	        }
 	        

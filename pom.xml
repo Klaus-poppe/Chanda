@@ -6,6 +6,7 @@
   <packaging>war</packaging>
   <name>Chanda Furniture</name>
   <build>
+  <finalName>ROOT</finalName>
     	<sourceDirectory>src</sourceDirectory>
     	<plugins>
       		<plugin>

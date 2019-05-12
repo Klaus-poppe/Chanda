@@ -38,7 +38,7 @@ public class ProfileController extends HttpServlet {
 		String username = (String) session.getAttribute("n");
 		s = db.getUser(username);
 		request.setAttribute("s", s);
-		  RequestDispatcher rs = request.getRequestDispatcher("signup.jsp");
+		  RequestDispatcher rs = request.getRequestDispatcher("/WEB-INF/signup.jsp");
         rs.forward(request, response);
 	}
 

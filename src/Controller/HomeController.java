@@ -39,7 +39,7 @@ public class HomeController extends HttpServlet {
 	        int recordsPerPage = 3;
 	        ArrayList<Banner> list = dao.getBanner(recordsPerPage);
 			request.setAttribute("gallery", list);
-			RequestDispatcher rd = request.getRequestDispatcher("home.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/home.jsp");
 			rd.forward(request, response);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
