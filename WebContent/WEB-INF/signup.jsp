@@ -154,7 +154,7 @@ input::placeholder {
 	 <%} %>
 	 
 	 <% User u = (User)request.getAttribute("s");
-	 if(u != null){
+	 if(u.getName() != null){
 	 %>
  
  <div class = "container mx-auto" style = " margin : 5rem">
