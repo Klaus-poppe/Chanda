@@ -56,7 +56,7 @@ if(session.getAttribute("n") == null){
 	%>
         	<a class="dropdown-item"  data-toggle="modal" data-target="#exampleModal1" >Sign In</a>
         		<div class="dropdown-divider"></div>
-        	<a class="dropdown-item" href="signup.jsp">Sign Up</a>
+        	<a class="dropdown-item" href="profile">Sign Up</a>
         	<%}else{ %>
         	<div class="px-4"><Strong>Welcome, </Strong><br>
         	 <%=name%>     	
