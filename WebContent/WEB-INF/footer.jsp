@@ -20,14 +20,14 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <style>
-.footer {
+#footer {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+  background: #efefef;
+  height : 22rem ;	
 }
 html {
   height: 100%;
@@ -51,7 +51,7 @@ body {
 
 <body>
 
-<div class = "container-fluid footer" id="footer"  style = "background : #f0f0f0 ; height : 22rem ;">
+<div class = "container-fluid" id="footer"  >
 	<div class = "row p-5">
 		<div class = "col-4">
 		<div class = "mx-3">
