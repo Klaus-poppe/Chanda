@@ -23,12 +23,50 @@
 
 </head>
 <style>
+.w3ls-icons li {
+    display: inline-block;
+    margin: 0 1em;
+}
+ul.list-unstyled.w3ls-icons.clients li {
+    margin: 0 0.2em;
+    text-align: center;
+}
+
+ul.list-unstyled.w3ls-icons.clients li span {
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+ul.list-unstyled.w3ls-icons.clients li span:hover {
+    color: #048e6c;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+
+}
+.test-info-w3ls {
+    text-align: center;
+    padding: 2em 4em;
+}
+
 .wrapper{
 background-color:#202020
 }
 .overlay{
 opacity : 0.7
 }
+.about-in .card {
+    border: none;
+    background: none;
+}
+.about-in .card i {
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+    color: #30c39e;
+}
+
 </style>
 
 <body>
@@ -117,46 +155,59 @@ opacity : 0.7
 
 </section>
 
-<section id="about" style="background : #1C2833">
 
-<div class="mx-auto" style="width: 300px;">
-  <h4 class="Display-4 mx-auto p-5 text-white">About Us</h4>
-</div>
-<div class= "container py-5" style="margin-top : -50px">
+<section id="about" style="background : #fff">
+
+
+<div class= "container py-5" style="margin-top : -50px ;">
 	<div class="row">
-		<div class = "col-md-4">
-			  <img class= "w-100" src="images/test.jpg"  style= "height : 30rem;" alt="Card image">
-		</div>
-		<div class = "col-md-8">
-					<h3 class="text-white">
-						Our story
-					</h3>
+                    <div class="col-lg-6 ">
+                        <img src="images/light.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 ">
+                        <h3 class="text-muted">About Us</h3>
+                        <h4>Showcase your work in a new way</h4>
+                        <p class="my-4 text-muted">Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit amet when an unknown printer took a galley of type.Vivamus id tempor felis. Cras sagittis mi sit amet malesuada mollis. Mauris porroinit consectetur cursus tortor vel interdum. </p>
+                        <!--/about-in-->
+                        <div class="row">
+                            <div class="col-lg-6 about-in text-left">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <i class="fas fa-anchor"></i>
+                                        <h5 class="card-title"> Branch 1</h5>
+                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur elit
+                                        </p>
+                                    </div>
+                                </div>
 
-					<p class="text-muted">
-						Phasellus egestas nisi nisi, lobortis ultricies risus semper nec. Vestibulum pharetra ac ante ut pellentesque. Curabitur fringilla dolor quis lorem accumsan, vitae molestie urna dapibus. Pellentesque porta est ac neque bibendum viverra. Vivamus lobortis magna ut interdum laoreet. Donec gravida lorem elit, quis condimentum ex semper sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis lectus a arcu facilisis, eu sodales lectus sagittis. Etiam pellentesque, magna vel dictum rutrum, neque justo eleifend elit, vel tincidunt erat arcu ut sem. Sed rutrum, turpis ut commodo efficitur, quam velit convallis ipsum, et maximus enim ligula ac ligula. Vivamus tristique vulputate ultricies. Sed vitae ultrices orci.
-					</p>
+                            </div>
+                            <div class="col-lg-6 about-in text-left">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <i class="far fa-map"></i>
+                                        <h5 class="card-title"> Branch 2</h5>
+                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur elit
+                                        </p>
+                                    </div>
+                                </div>
 
-					<blockquote class="blockquote  text-right">
-						<p class="mb-0 text-white-50">
-							Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while.
-						</p>
+                            </div>
+                        </div>
+                        <!--//about-in-->
+                    </div>
+                </div>
 
-						 <footer class="blockquote-footer">
-							 Steve Job’s
-						</footer>
-					</blockquote>
-		</div>
-	</div>
 
 </div>
 
 
 </section>
 
-<section id="feedback" >
-<div class="mx-auto" style="width: 300px;">
-  <h4 class="Display-4 mx-auto p-5">Feedback</h4>
-</div>
+
+
+
+<section style="background: #faad83;" id="feedback" >
+
 
 <% String error = (String) request.getAttribute("msg");  
     		if(error != null){ %>
@@ -171,36 +222,97 @@ opacity : 0.7
 </div>
 	 <%} %>
 	 
-<div class= "container py-5" >
+<div class= "container-fluid py-5" >
 	<div class="row">
-		<div class = "col-md-4">
-			  <img class= "w-100" src="images/test.jpg"  style= "height : 30rem;" alt="Card image">
+		<div class = "col-md-8 p-5">
+		<div class="container p-5 mx-5">
+            <div class="text-center">
+                <h3 class=" mb-lg-5 mb-3"> Client Reviews</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6 test-info-w3ls text-left">
+                    <p><span class="fa fa-quote-left"></span> Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. <span class="fa fa-quote-right"></span></p>
+
+               
+                    <h3 class="my-md-2 my-3 text-right">Jenifer Burns</h3>
+
+                    <ul class="list-unstyled w3ls-icons clients text-right">
+                        <li>
+							<span class="fa fa-star"></span>
+					
+                        </li>
+                        <li>
+							<span class="fa fa-star"></span>
+						
+                        </li>
+                        <li>
+							<span class="fa fa-star"></span>
+						
+                        </li>
+                        <li>
+							<span class="fa fa-star"></span>
+						
+                        </li>
+                        <li>
+							<span class="fa fa-star"></span>
+						
+                        </li>
+                      
+                    </ul>
+                </div>
+                <div class="col-md-6 test-info-w3ls text-left">
+                    <p><span class="fa fa-quote-left"></span> Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. <span class="fa fa-quote-right"></span></p>
+
+                    <h3 class="my-md-2 my-3 text-right"> Abraham Smith</h3>
+
+                    <ul class="list-unstyled w3ls-icons clients text-right">
+                        <li>
+                      		<span class="fa fa-star"></span>
+						
+                        </li>
+                        <li>
+							<span class="fa fa-star"></span>
+					
+                        </li>
+                        <li>
+							<span class="fa fa-star"></span>
+						
+                        </li>
+                        <li>
+							<span class="fa fa-star"></span>
+						
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 		</div>
-		
-		<div class = "col-md-8 px-5 ">
-		
+		<div class = "col-md-4 p-5 ">
+		<div class="text-center">
+                <h3 class=" mb-lg-5 mb-3">Submit a review!</h3>
+            </div>
 				<form class="px-5" action="feedback" method="post">
 				
-  <div class="form-group">
-  <h3 class= "pb-4">Send us your message</h4>
-    <input type="text" class="form-control rounded-0 "  name="n" placeholder="Full Name" style = "height : 3rem;">
+  <div class="form-group shadow">
+    <input type="text" class="form-control  "  name="n" placeholder="Full Name" style = "height : 3rem;">
   </div>
-  <div class="form-group">
-    <input type="text" class="form-control  rounded-0"  placeholder="Phone number" name="p" style = "height : 3rem;">
+  <div class="form-group shadow">
+    <input type="text" class="form-control "  placeholder="Phone number" name="p" style = "height : 3rem;">
   </div>
-	  <div class="form-group">
-    <input type="email" class="form-control rounded-0"  placeholder="Email Address" name="e" style = "height : 3rem;">
+	  <div class="form-group shadow">
+    <input type="email" class="form-control "  placeholder="Email Address" name="e" style = "height : 3rem;">
   </div>
-	<div class="form-group">
-    <textarea class="form-control rounded-0" rows="5" placeholder = "Message" name="m"  required></textarea>
+	<div class="form-group border shadow">
+    <textarea class="form-control" rows="5" placeholder = "Write a review!" name="m"  required></textarea>
   </div>
-  <button type="submit" class="btn btn-dark">Submit</button>
+  
+  <button type="submit" class="btn btn-dark shadow">Submit</button>
 </form>
-		</div>
 	</div>
-
+</div>
 </div>
 </section>
+
 
 
 <%@ include file="footer.jsp"%>
