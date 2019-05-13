@@ -20,26 +20,38 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <style>
-#footer {
-    position: fixed;
-    height: 50px;
-    background-color: red;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
-For your body:
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
-    margin-bottom:50px;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 </style>
 </head>
 
 <body>
 
-<div class = "container-fluid" id="footer"  style = "background : #f0f0f0 ; height : 22rem ;">
+<div class = "container-fluid footer" id="footer"  style = "background : #f0f0f0 ; height : 22rem ;">
 	<div class = "row p-5">
 		<div class = "col-4">
 		<div class = "mx-3">
