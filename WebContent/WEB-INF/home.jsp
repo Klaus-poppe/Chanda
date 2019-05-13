@@ -111,15 +111,15 @@ opacity : 0.7
 </div>
 </section>
 
-<section id="categories" style="background:#EBEDEF" >
+<section id="categories"  style="background:#EBEDEF;padding-bottom:6rem" >
 
 <div class="mx-auto" style="width: 200px;">
-  <h4 class="Display-4 mx-auto p-5">Categories</h4>
+  <h4 class="Display-4 mx-auto pt-5 pl-5">Categories</h4>
 </div>
-<div class="container py-3"  >
+<div class="container py-5"  >
 <div class="card-columns" >
   <div class="card text-center" style="margin-top:7rem ;">
-    <img class="card-img-top" src="images/kitchen.jpg"  alt="Card image cap" >
+    <img class="card-img-top" src="images/kitchen.jpg" style=" height:100%;max-height:20rem;" alt="Card image cap" >
     <div class="card-body">
       <h5 class="card-title">Kitchen</h5>
       <p class="card-text">Shop kitchen furniture at Chanda Furniture Guaranteed low prices on all modern kitchen chairs, stools, tables and more</p>
@@ -127,7 +127,7 @@ opacity : 0.7
     </div>
   </div>
  <div class="card text-center" >
-    <img class="card-img-top" src="images/living.png" alt="Card image cap" >
+    <img class="card-img-top" src="images/living.png" style=" height:100%;max-height:20rem;" alt="Card image cap" >
     <div class="card-body">
       <h5 class="card-title">Living room</h5>
       <p class="card-text">Your living room is one of the most important rooms,it also serves as a home’s showcase and focal point and we are here to help with that</p>
@@ -135,7 +135,7 @@ opacity : 0.7
     </div>
   </div>
   <div class="card text-center" >
-    <img class="card-img-top" src="images/office.jpg" alt="Card image cap">
+    <img class="card-img-top" src="images/office.jpg" style=" height:100%;max-height:20rem;" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Office</h5>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -143,7 +143,7 @@ opacity : 0.7
     </div>
   </div>
   <div class="card text-center" style="margin-top:10rem;">
-    <img class="card-img-top" src="images/bedroom.jpg" alt="Card image cap" >
+    <img class="card-img-top" src="images/bedroom.jpg" style=" height:100%;max-height:20rem;" alt="Card image cap" >
     <div class="card-body">
       <h5 class="card-title">Bedroom</h5>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>

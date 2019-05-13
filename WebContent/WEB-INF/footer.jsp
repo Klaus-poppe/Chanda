@@ -43,7 +43,7 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 6rem;
+  padding-bottom: 22rem;
   min-height: 100%;
 }
 </style>

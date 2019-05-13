@@ -37,21 +37,21 @@
 	
 <div class="container">
 <% String error = (String) request.getAttribute("msg");  
-    		if(error != null){ %>
+if(error.equals("Registered succesfully")){ %>
 <div class = "container" style =" padding-top : 2rem" >
   	
-    		 <div class="alert alert-danger alert-dismissible fade show alert-fixed" role="alert">
-   <strong><%= error %></strong> , Try again
+    		 <div class="alert alert-success alert-dismissible fade show alert-fixed" role="alert">
+   <strong><%= error %></strong> , Login to continue
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
 </div>
-	 <%}else if(error == "Registered succesfully"){%>
+	 <%}else if(error != null){%>
 		<div class = "container" style =" padding-top : 2rem" >
   	
-    		 <div class="alert alert-success alert-dismissible fade show alert-fixed" role="alert">
-   <strong><%= error %></strong> , Login to continue
+    		 <div class="alert alert-danger alert-dismissible fade show alert-fixed" role="alert">
+   <strong><%= error %></strong> , Try again
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>

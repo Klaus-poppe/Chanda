@@ -22,7 +22,7 @@ public class DBConnection {
 		try {
 			Context initialContext = new InitialContext();
 			try {
-				return (DataSource) initialContext.lookup(System.getenv("DB_JNDI"));
+				return (DataSource) initialContext.lookup("java:comp/env/jdbc/conPool");
 			} catch (NameNotFoundException e) {
 				Context envContext = (Context) initialContext.lookup("java:comp/env"); // Tomcat places datasources
 																						// inside java:comp/env
