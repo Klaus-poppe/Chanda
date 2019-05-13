@@ -34,14 +34,6 @@ CREATE TABLE `banner` (
   `image` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `banner`
---
-
-INSERT INTO `banner` (`bid`, `title`, `image`) VALUES
-(1, 'Bedroom', 'banner_04.jpg'),
-(2, 'Living room', 'banner_03.jpg'),
-(3, 'kitchen', 'banner_02.jpg');
 
 -- --------------------------------------------------------
 
@@ -56,11 +48,6 @@ CREATE TABLE `cart` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`cid`, `uid`, `pid`) VALUES
-(8, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -77,16 +64,6 @@ CREATE TABLE `feedback` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `feedback`
---
-
-INSERT INTO `feedback` (`fid`, `name`, `phone`, `email`, `message`) VALUES
-(21, 'ashwin@xyz', '9167100401', 'ash@xyz', 'asj'),
-(22, 'ashwin@xyz', '9167100401', 'ash@xyz', 'dth'),
-(23, 'ashwin@xyz', NULL, 'ash@xyz', 'sfsgdf'),
-(24, 'ashwin', 'as', 'as@sd', 'as'),
-(25, 'ashwin@xyz', '9167100401', 'ashwin@gmail', 'ashwin'),
-(26, 'ashwin@xyz', '9167100401', 'ash@xyz', 'rgr');
 
 -- --------------------------------------------------------
 
@@ -106,13 +83,6 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`oid`, `name`, `email`, `phone`, `address`, `pid`, `quantity`, `amount`) VALUES
-(43, 'ashwin', 'ashwin@gmail.com', '9876543210', 'xyz', 1, 1, 50000),
-(44, 'ashwin', 'ashwin@gmail.com', '9876543210', 'xyz', 2, 1, 40000);
-
 -- --------------------------------------------------------
 
 --
@@ -129,15 +99,6 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`pid`, `name`, `category`, `description`, `price`, `image`) VALUES
-(1, 'Bed', 'Bedroom', 'King Size Bed', 100000, '02.jpg'),
-(2, 'Dining Table', 'Kitchen', '4x4 Glass dining table', 40000, '05.jpg'),
-(3, 'Study table', 'Office', '3x5 feet wooden study table', 20000, '01.jpg'),
-(4, 'Coffee table', 'Living room', 'Round wooden coffee table', 8000, '10.jpg');
-
 -- --------------------------------------------------------
 
 --
@@ -153,17 +114,7 @@ CREATE TABLE `users` (
   `address` varchar(1024) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `users`
---
 
-INSERT INTO `users` (`uid`, `name`, `password`, `email`, `phone`, `address`) VALUES
-(1, 'ashwin', '2852F697A9F8581725C6FC6A5472A2E5', 'ashwin@gmail.com', '9876543210', 'xyz'),
-(3, 'bestboi', '2852F697A9F8581725C6FC6A5472A2E5', 'ash@xyz.com', '9876543210', ' 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879');
-
---
--- Indexes for dumped tables
---
 
 --
 -- Indexes for table `banner`

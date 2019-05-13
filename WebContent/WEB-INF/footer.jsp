@@ -70,26 +70,26 @@ body {
 
 				<ul style = "list-style-type : none">
 					<li class="my-2">
-						<a href="#" class="text-muted">
-							Beds
+						<a href="Display?cat=Kitchen" class="text-muted">
+							Kitchen
 						</a>
 					</li>
 
 					<li class="my-2">
-						<a href="#" class="text-muted">
-							Wardrobes
+						<a href="Display?cat=Living room" class="text-muted">
+							Living room
 						</a>
 					</li>
 
 					<li class="my-2">
-						<a href="#" class="text-muted">
-							Desks
+						<a href="Display?cat=Office" class="text-muted">
+							Office
 						</a>
 					</li>
 
 					<li class="my-2">
-						<a href="#" class="text-muted">
-							Others
+						<a href="Display?cat=Bedroom" class="text-muted">
+							Bedroom
 						</a>
 					</li>
 				</ul>
@@ -97,31 +97,36 @@ body {
 		</div>	
 		<div class = "col-2">
 			<h6 class="p-2 my-3 mx-4">
-					LINKS
+					USEFUL LINKS
 				</h6>
 
 				<ul style = "list-style-type : none">
 					<li class="my-2">
-						<a href="#" class="text-muted">
+						<a href="home#home" class="text-muted">
 							Home
 						</a>
 					</li>
 
 					<li class="my-2">
-						<a href="#" class="text-muted">
+						<a href="Display" class="text-muted">
 							Shop
 						</a>
 					</li>
 
 					<li class="my-2">
-						<a href="#" class="text-muted">
-							About
+						<a href="profile" class="text-muted">
+							Profile
 						</a>
 					</li>
 
 					<li class="my-2">
-						<a href="#" class="text-muted">
-							Contact
+						<a href="cart" class="text-muted">
+							Cart
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="https://www.privacypolicygenerator.info/live.php?token=NlGHx0DaeEorOXZAw3KuVz1m9EZ39yph" class="text-muted">
+							Privacy
 						</a>
 					</li>
 				</ul>

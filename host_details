@@ -1,2 +1,0 @@
-
-A new persistent JWS application for Apache Tomcat 8 (using MySQL) has been created in your project. The username/password for administering your JWS is 623U71lR/TjnSe5fb. For accessing the MySQL database "furniture" use the credentials userABC/password. Please be sure to create the secret named "jws-app-secret" containing the server.crt file used for serving secure content.
