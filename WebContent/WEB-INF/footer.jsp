@@ -19,12 +19,27 @@
 <!-- Latest compiled JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+#footer {
+    position: fixed;
+    height: 50px;
+    background-color: red;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+For your body:
 
+body {
+    margin-bottom:50px;
+}
+</style>
 </head>
 
 <body>
 
-<div class = "container-fluid"  style = "background : #f0f0f0 ; height : 22rem">
+<div class = "container-fluid" id="footer"  style = "background : #f0f0f0 ; height : 22rem ;">
 	<div class = "row p-5">
 		<div class = "col-4">
 		<div class = "mx-3">

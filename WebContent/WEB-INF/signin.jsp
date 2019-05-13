@@ -47,7 +47,17 @@
   </button>
 </div>
 </div>
-	 <%} %>
+	 <%}else if(error == "Registered succesfully"){%>
+		<div class = "container" style =" padding-top : 2rem" >
+  	
+    		 <div class="alert alert-success alert-dismissible fade show alert-fixed" role="alert">
+   <strong><%= error %></strong> , Login to continue
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+</div>			 
+	 <% } %>
 </div>
 <div class = "container " style = "padding-top: 10rem">
 <div class = "row">	
