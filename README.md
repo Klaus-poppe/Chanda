@@ -1,7 +1,7 @@
 # Chanda Furniture
 
 Ecommerce website for furniture trading.
-Website hosted at - [https://chanda-furniture-economics.7e14.starter-us-west-2.openshiftapps.com/](https://chanda-furniture-economics.7e14.starter-us-west-2.openshiftapps.com/)
+Website hosted at [openshift](https://chanda-furniture.7e14.starter-us-west-2.openshiftapps.com/)
 
 
 # Features
