@@ -21,7 +21,36 @@
 <!-- Latest compiled JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<Style>
+.icon-bar {
+  position: fixed;
+  top: 92%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index : 999;
+}
 
+.icon-bar p {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar p:hover {
+  background-color: #000;
+}
+
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+</Style>
 </head>
 
 <body>
@@ -132,6 +161,11 @@ if(session.getAttribute("n") == null){
     </div>
   </div>
 </div>
+
+<div class="icon-bar ">
+  <p class="google shadow border">For any issues<br>please contact us at <br> <i class="fas fa-phone"></i> : <u>9587-104-922</u> </p> 
+</div>
+
 
 </body>
 </html>
