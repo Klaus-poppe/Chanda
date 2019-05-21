@@ -59,7 +59,7 @@ body {
 					GET IN TOUCH
 				    </h4>
 				<p class="p-2 text-muted">
-						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+						Any questions? Let us know in store at  Sector-3, Jagdamba Colony, Vidyadhar Nagar, Jaipur, Rajasthan 302032 or call us on (+91) 958-710-4922
 					</p>
 			</div>
 		</div>	

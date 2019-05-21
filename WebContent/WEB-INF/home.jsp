@@ -138,7 +138,7 @@ opacity : 0.7
     <img class="card-img-top" src="images/office.jpg" style=" height:100%;max-height:20rem;" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Office</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">Decorate your office with sharp and stylish interior decor for a smart look.Desks,chairs and much more available here !</p>
     <a  href="Display?cat=Office" class="btn btn-outline-dark">Buy now</a>
     </div>
   </div>
@@ -146,7 +146,7 @@ opacity : 0.7
     <img class="card-img-top" src="images/bedroom.jpg" style=" height:100%;max-height:20rem;" alt="Card image cap" >
     <div class="card-body">
       <h5 class="card-title">Bedroom</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">Light up your bedroom in a way you have never done before.Here at Chanda furnitures we help you sleep more comfortably.</p>
    		<a  href="Display?cat=Bedroom" class="btn btn-outline-dark">Buy now</a>
     </div>
   </div>
@@ -167,7 +167,7 @@ opacity : 0.7
                     <div class="col-lg-6 ">
                         <h3 class="text-muted">About Us</h3>
                         <h4>Showcase your work in a new way</h4>
-                        <p class="my-4 text-muted">Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit amet when an unknown printer took a galley of type.Vivamus id tempor felis. Cras sagittis mi sit amet malesuada mollis. Mauris porroinit consectetur cursus tortor vel interdum. </p>
+                        <p class="my-4 text-muted">Designed to give your space an unconventional, underground look.Full of unique, yet timeless mid-century features, find melody in beautiful kilim and textural details </p>
                         <!--/about-in-->
                         <div class="row">
                             <div class="col-lg-6 about-in text-left">
@@ -175,7 +175,7 @@ opacity : 0.7
                                     <div class="card-body">
                                         <i class="fas fa-anchor"></i>
                                         <h5 class="card-title"> Branch 1</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur elit
+                                        <p class="card-text text-muted"> Sector-3, Jagdamba Colony, Vidyadhar Nagar, Jaipur, Rajasthan 302032
                                         </p>
                                     </div>
                                 </div>
@@ -186,7 +186,7 @@ opacity : 0.7
                                     <div class="card-body">
                                         <i class="far fa-map"></i>
                                         <h5 class="card-title"> Branch 2</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur elit
+                                        <p class="card-text text-muted">Coming Soon!
                                         </p>
                                     </div>
                                 </div>
@@ -231,10 +231,10 @@ opacity : 0.7
             </div>
             <div class="row">
                 <div class="col-md-6 test-info-w3ls text-left">
-                    <p><span class="fa fa-quote-left"></span> Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. <span class="fa fa-quote-right"></span></p>
+                    <p><span class="fa fa-quote-left"></span> Excellent customer service and my go to furniture shop in jaipur now has a shop. Brilliant! <span class="fa fa-quote-right"></span></p>
 
                
-                    <h3 class="my-md-2 my-3 text-right">Jenifer Burns</h3>
+                    <h3 class="my-md-2 my-3 text-right">Amrut Yadav</h3>
 
                     <ul class="list-unstyled w3ls-icons clients text-right">
                         <li>
@@ -261,9 +261,9 @@ opacity : 0.7
                     </ul>
                 </div>
                 <div class="col-md-6 test-info-w3ls text-left">
-                    <p><span class="fa fa-quote-left"></span> Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. <span class="fa fa-quote-right"></span></p>
+                    <p><span class="fa fa-quote-left"></span> Very Compelling designs and just a joy to shop at chanda.Kind and polite staff and customer friendly store policies.Highly recommended!  <span class="fa fa-quote-right"></span></p>
 
-                    <h3 class="my-md-2 my-3 text-right"> Abraham Smith</h3>
+                    <h3 class="my-md-2 my-3 text-right"> Vinay Thakkar</h3>
 
                     <ul class="list-unstyled w3ls-icons clients text-right">
                         <li>
